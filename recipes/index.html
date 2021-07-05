@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Base</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Firebase (Database) </h1>
+<ul>
+</ul>
+<form action="">
+    <p>Add a new recipe:</p>
+    <label for="Add">
+        <input type="text" id="recipe">
+    </label>
+    <button type="submit">Add Recipe</button>
+</form>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
+
+
+    <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+        apiKey: "AIzaSyC0DCTjcAjK-Z0wtScYOIkD7FtFfG2avds",
+        authDomain: "codecafe-cca67.firebaseapp.com",
+        projectId: "codecafe-cca67",
+        storageBucket: "codecafe-cca67.appspot.com",
+        messagingSenderId: "216954627044",
+        appId: "1:216954627044:web:29df5b5abbb48a24551df1",
+        measurementId: "G-Z8CZLB0ZWF"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+
+    </script>   
+    <script src="sandbox.js"></script>
+</body>
+</html>
